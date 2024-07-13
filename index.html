@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To-Do-List</title>
+    <link rel="shortcut icon" href="/img/pokeball-icon.png">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+     <!-- Header including the logo and the main navigation-->
+  <header class="page-header">  
+    <a href="index.html" class="logo-link"> 
+        <img class="page-header__item" width="200" height="auto" src="img/Pokemon_Logo.jpg" alt="Pokemon logo">
+     </a>
+  </header>
+    <h1>Pokedex</h1>
+    <!--Container for Pokemon list-->
+    <ul class="pokemon-list"></ul>
+    <!-- Adding modals containier-->
+    <div id="modal-container">
+      <div class="modal">
+        <button class="modal-close">Close</button>
+        <h1 class="modal-title"></h1>
+        <img class="modal-img" scr="" alt="Pokemon image">
+        <p class="modal-details"></p>
+      </div>
+    </div>
+<!--Link to JavaScript files-->
+   <strong>
+    <script src="./js/promise-polyfill.js"></script>
+    <script src="./js/fetch-polyfill.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src="./js/scripts.js"></script>
+   </strong>  
+  </body>
+</html>
