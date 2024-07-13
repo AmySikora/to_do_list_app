@@ -13,4 +13,10 @@ list.append("<li>list something</li>");
 let li = $('<li></li>');
 //to append the li vairiable to the list variable using:
 list.append(li);
-
+//to transverse the DOM elelemts: 
+let input= $('input');
+input.parent(); //get parent element
+input.children(); //get all children
+input.closest('.container'); //go up hierarchy of parents until selector matches
+input.siblings(); //get all siblings
+//to get input values from the index page: 
