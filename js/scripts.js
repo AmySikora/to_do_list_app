@@ -20,3 +20,4 @@ input.children(); //get all children
 input.closest('.container'); //go up hierarchy of parents until selector matches
 input.siblings(); //get all siblings
 //to get input values from the index page: 
+$('#input').val();
