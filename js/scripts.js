@@ -30,3 +30,6 @@ $('notification')
 .addClass('red')
 .delay(300)
 .removeClass('red');
+//To create a new DOM element:
+let newElement = $('<div class="new-class">Content is here!</div>');
+$('body').append(newElement);
