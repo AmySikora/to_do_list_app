@@ -27,6 +27,6 @@ let listValue = $('#list').val();
 li.append(listValue);
 //DOM manipulation chaining to add flashing colors:
 $('notification')
-.addClass('bright-red')
+.addClass('red')
 .delay(300)
-.removeClass('bright-red');
+.removeClass('red');
