@@ -27,7 +27,7 @@ let inputValue = $('#input').val();
 li.append(inputValue);
 //DOM manipulation chaining to add flashing colors:
 $('notification')
-.addClass('red')
+.addClass('red') 
 .delay(300)
 .removeClass('red');
 //To create a new DOM element:
