@@ -22,4 +22,6 @@ input.siblings(); //get all siblings
 //to get input values from the index page: 
 $('#list').val();
 //To store the value into a variable use:
-let listValue = $('#list').val;
+let listValue = $('#list').val();
+//To append the value to another element: 
+li.append(listValue);
