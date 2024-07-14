@@ -33,4 +33,5 @@ $('notification')
 //To create a new DOM element:
 let newElement = $('<div class="new-class">Do not forget milk!</div>');
 $('body').append(newElement);
-//
+//To add a strike through to a list item 
+li.addClass("strike");
