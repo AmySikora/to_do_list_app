@@ -6,7 +6,7 @@ $('.list');
 //To assign the selected list to a variable use:
 let list = $('#list');
 //to append something to the list use:
-$('#list').append("<li>Dog food</li>");
+$('#list').append("<li>Strawberries</li>");
 //to use the variable "list" created earier write:
 list.append("<li>Milk</li>");
 //to store an <li> element as well as using:
@@ -20,4 +20,6 @@ input.children(); //get all children
 input.closest('.container'); //go up hierarchy of parents until selector matches
 input.siblings(); //get all siblings
 //to get input values from the index page: 
-$('#input').val();
+$('#list').val();
+//To store the value into a variable use:
+let listValue = $('#list').val;
