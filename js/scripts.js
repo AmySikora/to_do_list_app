@@ -25,3 +25,8 @@ $('#list').val();
 let listValue = $('#list').val();
 //To append the value to another element: 
 li.append(listValue);
+//DOM manipulation chaining to add flashing colors:
+$('notification')
+.addClass('bright-red')
+.delay(300)
+.removeClass('bright-red');
