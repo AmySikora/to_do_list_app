@@ -33,3 +33,4 @@ $('notification')
 //To create a new DOM element:
 let newElement = $('<div class="new-class">Do not forget milk!</div>');
 $('body').append(newElement);
+//
