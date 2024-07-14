@@ -3,6 +3,6 @@
 }
 
 /* create a strike that will cross out a lost item */
-.strike{
+.strike {
     text-decoration: line-through;
 }
