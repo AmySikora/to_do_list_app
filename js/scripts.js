@@ -20,11 +20,11 @@ input.children(); //get all children
 input.closest('.container'); //go up hierarchy of parents until selector matches
 input.siblings(); //get all siblings
 //to get input values from the index page: 
-$('#list').val();
+$('#input').val();
 //To store the value into a variable use:
-let listValue = $('#list').val();
+let inputValue = $('#input').val();
 //To append the value to another element: 
-li.append(listValue);
+li.append(inputValue);
 //DOM manipulation chaining to add flashing colors:
 $('notification')
 .addClass('red')
