@@ -6,9 +6,9 @@ $('.list');
 //To assign the selected list to a variable use:
 let list = $('#list');
 //to append something to the list use:
-$('#list').append(<li>list somenthing</li>);
+$('#list').append("<li>Dog food</li>");
 //to use the variable "list" created earier write:
-list.append("<li>list something</li>");
+list.append("<li>Milk</li>");
 //to store an <li> element as well as using:
 let li = $('<li></li>');
 //to append the li vairiable to the list variable using:
