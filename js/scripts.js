@@ -49,3 +49,22 @@ input.children(); //get all children
 input.closest('.container'); //go up hierarchy of parents until selector matches
 input.siblings(); //get all siblings
 
+//To show or hide HTML elements:
+let inputs= $('input');
+inputs.show(); //make them visible
+inputs.hide(); //hide the inputs
+
+inputs.fadeOut(); //fade the elements in and out and then hide them
+inputs.fadeIn(1000); //fade the elementand them show them
+inputs.fadeToggle(); //fade the elelemts in/out depending on their visibility
+
+inputs.slideDown(); //slide out of view and hide elements
+inputs.slideUp(); //slide elelemtns into view and show
+inputs.slideToggle(); //slide elements in and out
+
+//to create, remove and append empty elements:
+input.remove(); //delete the element
+$('body').append(input); //similar to appendChild
+$('body').empty(); // removes element children
+
+
