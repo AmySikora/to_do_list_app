@@ -26,6 +26,8 @@ $('#input').val("Snacks");
 let inputValue = $('#input').val();
 //To append the value to another element: 
 li.append(inputValue);
+//to hide an element:
+li.addClass('delete');
 
 //To execute a function on an indivdual element:
 $('input').each(function (i) {
