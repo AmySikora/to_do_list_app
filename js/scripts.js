@@ -28,9 +28,13 @@ let inputValue = $('#input').val();
 li.append(inputValue);
 //to hide an element:
 li.addClass('delete');
+//crossing out list items with event handling
+li.on("click", function() {
+    li.addClass("strike");
+  });
 
 //Event handling adding and removing
-$('imput').on('click', function (event) [
+$('input').on('click', function (event) [
     // Do something
 ]);
 $('input').off('click'); //remove all "click" listeners
