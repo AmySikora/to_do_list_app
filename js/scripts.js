@@ -29,6 +29,12 @@ li.append(inputValue);
 //to hide an element:
 li.addClass('delete');
 
+//Event handling adding and removing
+$('imput').on('click', function (event) [
+    // Do something
+]);
+$('input').off('click'); //remove all "click" listeners
+
 //To execute a function on an indivdual element:
 $('input').each(function (i) {
     let inputValue = $(this).val();
