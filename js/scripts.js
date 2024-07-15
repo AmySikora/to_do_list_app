@@ -49,9 +49,9 @@ $.ajax('[URL]', {
 });
 
 //Event handling adding and removing
-$('input').on('click', function (event) [
+$('input').on('click', function (event) {
     // Do something
-]);
+});
 $('input').off('click'); //remove all "click" listeners
 
 //To execute a function on an indivdual element:
