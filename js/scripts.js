@@ -10,9 +10,9 @@ let list = $('#list');
 //to append something to the list use:
 $('#list').append("<li>Strawberries</li>");
 //to use the variable "list" created earier write:
-list.append("<li>Milk</li>");
+list.append("<li>Dog food</li>");
 //to store an <li> element as well as using:
-let li = $('<li></li>');
+let li = $('<li>Milk</li>');
 //to append the li vairiable to the list variable using:
 list.append(li);
 //to transverse the DOM elelemts: 
@@ -28,12 +28,12 @@ let inputValue = $('#input').val();
 //To append the value to another element: 
 li.append(inputValue);
 //DOM manipulation chaining to add flashing colors:
-$('notification')
-.addClass('red') 
-.delay(300)
-.removeClass('red');
+//$('notification')
+//.addClass('red') 
+//.delay(300)
+//.removeClass('red');
 //To create a new DOM element:
-let newElement = $('<div class="new-class">Do not forget milk!</div>');
-$('body').append(newElement);
+////let newElement = $('<div class="new-class">Do not forget milk!</div>');
+//$('body').append(newElement);
 //To add a strike through to a list item 
 li.addClass("strike");
