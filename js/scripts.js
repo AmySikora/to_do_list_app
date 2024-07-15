@@ -12,28 +12,40 @@ $('#list').append("<li>Strawberries</li>");
 //to use the variable "list" created earier write:
 list.append("<li>Dog food</li>");
 //to store an <li> element as well as using:
-let li = $('<li>Milk</li>');
+let li = $('<li></li>');
 //to append the li vairiable to the list variable using:
 list.append(li);
-//to transverse the DOM elelemts: 
-//let input= $('input');
-//input.parent(); //get parent element
-//input.children(); //get all children
-//input.closest('.container'); //go up hierarchy of parents until selector matches
-//input.siblings(); //get all siblings
+//To create a new DOM element:
+let newElement = $('<div class="new-class">Do not forget milk!</div>');
+$('body').append(newElement);
+//To add a strike through to a list item 
+li.addClass("strike");
 //to get input values from the index page: 
-$('#input').val();
+$('#input').val("Snacks");
 //To store the value into a variable use:
 let inputValue = $('#input').val();
 //To append the value to another element: 
 li.append(inputValue);
+
+//To execute a function on an indivdual element:
+$('input').each(function (i) {
+    let inputValue = $(this).val();
+    let inputName = $(this).attr('name');
+    if(inputValue().length < 1){
+        console.log('Please fill out the ' + inputName + ' field' )
+    } 
+});
+
 //DOM manipulation chaining to add flashing colors:
-//$('notification')
-//.addClass('red') 
-//.delay(300)
-//.removeClass('red');
-//To create a new DOM element:
-////let newElement = $('<div class="new-class">Do not forget milk!</div>');
-//$('body').append(newElement);
-//To add a strike through to a list item 
-li.addClass("strike");
+$('notification')
+.addClass('red') 
+.delay(300)
+.removeClass('red');
+
+//to transverse the DOM elelemts: 
+let input= $('input');
+input.parent(); //get parent element
+input.children(); //get all children
+input.closest('.container'); //go up hierarchy of parents until selector matches
+input.siblings(); //get all siblings
+
