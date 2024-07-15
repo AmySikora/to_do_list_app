@@ -1,6 +1,5 @@
 .text--red { 
     color: red; 
 }
-
 /* create a strike that will cross out a lost item */
 .strike{text-decoration: line-through;}
