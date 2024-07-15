@@ -33,6 +33,21 @@ li.on("click", function() {
     li.addClass("strike");
   });
 
+// to use Ajax to fetch with jQuery asynchronous requests:
+$.ajax('https://yesno.wtf/api', { dtataType: 'json'}).then(function (responseJSON) {
+    console.log(responseJSON); //parsed JSOn response
+});
+//catch handle to chain handle errors:
+$.ajax('[URL]', {
+    method: 'POST',
+    dataType: 'json',
+    timeout: 5000
+}).then(function (responseJSON) {
+    console.log(responseJSON);
+}).catch(function(err) {
+    console.log('Caught and error:" + err.statusText');
+});
+
 //Event handling adding and removing
 $('input').on('click', function (event) [
     // Do something
