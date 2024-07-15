@@ -2,4 +2,11 @@
     color: red; 
 }
 /* create a strike that will cross out a lost item */
-.strike{text-decoration: line-through;}
+.strike {
+    text-decoration: line-through;
+}
+
+/* css trick to hide a list item */
+.delete {
+    display: none;
+}
