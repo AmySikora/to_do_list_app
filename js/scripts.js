@@ -15,7 +15,27 @@ function newItem(){
         let list = $('#list');
     }
 
-//to select a list item on an ordered list with 
+//2. Crossing out an item from the list of items:
+    function crossOut() {
+        //To add a strike through to a list item 
+        li.classList.toggle("strike");
+    }
+    //crossing out list items with event handling
+        li.on("dblclick", crossOut);
+
+//3(i). Adding the delete button "X": 
+        let crossOutButton = $("<crossOutButton></crossOutButton>");
+            li.append(crossOutButton);
+
+            crossOutButton.on("click", deleteListItem);
+
+//3(ii). Adding CLASS DELETE (DISPLAY: NONE) from the css:
+
+        function deleteListItem() {
+            li.addClass("delete")
+        }
+        
+            //to select a list item on an ordered list with 
 //HTML ID of <ol id="list></ol>  use:
 $('#list');
 //If it's a class (<ol class="list"></ol>) use:
@@ -33,18 +53,14 @@ list.append(li);
 //To create a new DOM element:
 let newElement = $('<div class="new-class">Do not forget milk!</div>');
 $('body').append(newElement);
-//To add a strike through to a list item 
-li.addClass("strike");
+
 //to get input values from the index page: 
 $('#input').val("Dog food");
 //To append the value to another element: 
 li.append(inputValue);
 //to hide an element:
 li.addClass('delete');
-//crossing out list items with event handling
-li.on("click", function() {
-    li.addClass("strike");
-  });
+
 
 // to use Ajax to fetch with jQuery asynchronous requests:
 //$.ajax('https://yesno.wtf/api', { dtataType: 'json'}).then(function (responseJSON) {
