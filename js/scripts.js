@@ -3,16 +3,24 @@ function newItem(){
 //to store an <li> element as well as using:
     let li = $('<li></li>');
     //To store the value into a variable use:
-    let inputValue = $('#input').val();    
-}
+    let inputValue = $('#input').val(); 
+    let text = inputValue;
+    //To append the value to another element: 
+    li.append(text);   
+
+    if (inputValue === '') {
+        alert("You must write something!");
+    }   else {
+    //To assign the selected list to a variable use:
+        let list = $('#list');
+    }
 
 //to select a list item on an ordered list with 
 //HTML ID of <ol id="list></ol>  use:
 $('#list');
 //If it's a class (<ol class="list"></ol>) use:
 //$('.list');
-//To assign the selected list to a variable use:
-let list = $('#list');
+
 //to select and item in a class use:
 $('.container')
 //to append something to the list use:
