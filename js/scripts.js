@@ -34,7 +34,9 @@ function newItem(){
         function deleteListItem() {
             li.addClass("delete")
         }
-        
+
+ // 4. Reordering the items: 
+        $('#list').sortable();
             //to select a list item on an ordered list with 
 //HTML ID of <ol id="list></ol>  use:
 $('#list');
