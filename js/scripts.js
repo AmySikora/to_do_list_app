@@ -1,3 +1,11 @@
+function newItem(){
+//1. Adding a new item to the list of items:
+//to store an <li> element as well as using:
+    let li = $('<li></li>');
+    //To store the value into a variable use:
+    let inputValue = $('#input').val();    
+}
+
 //to select a list item on an ordered list with 
 //HTML ID of <ol id="list></ol>  use:
 $('#list');
@@ -6,13 +14,12 @@ $('#list');
 //To assign the selected list to a variable use:
 let list = $('#list');
 //to select and item in a class use:
-//$('.container')
+$('.container')
 //to append something to the list use:
 $('#list').append("<li>Strawberries</li>");
 //to use the variable "list" created earier write:
 list.append("<li>Dog food</li>");
-//to store an <li> element as well as using:
-let li = $('<li></li>');
+
 //to append the li vairiable to the list variable using:
 list.append(li);
 //To create a new DOM element:
@@ -22,8 +29,6 @@ $('body').append(newElement);
 li.addClass("strike");
 //to get input values from the index page: 
 $('#input').val("Dog food");
-//To store the value into a variable use:
-let inputValue = $('#input').val();
 //To append the value to another element: 
 li.append(inputValue);
 //to hide an element:
