@@ -1,34 +1,32 @@
 function newItem(){
 //1. Adding a new item to the list of items:
-//to store an <li> element as well as using
     let li = $("<li></li>");
-    //To store the value into a variable use:
     let inputValue = $("#input").val(); 
     let text = inputValue;
-    //To append the value to another element: 
     li.append(text);   
 
     if (inputValue === '') {
         alert("You must write something!");
     }   else {
-    //To assign the selected list to a variable use:
         let list = $('#list');
         list.append(li);
+        $('#input').val('');
     }
 
 //2. Crossing out an item from the list of items:
-    function crossOut() {
-        //To add a strike through to a list item 
-        li.classList.toggle("strike");
-    }
-    //crossing out list items with event handling
-        li.on("dblclick", crossOut);
+    li.on("dblclick", function() {
+        li.toggleClass('strike');
+    });
 
 //3(i). Adding the delete button "X": 
     let crossOutButton = $("<crossOutButton></crossOutButton>");
-         li.append(crossOutButton);
+        crossOutButton.text('X');
+        crossOutButton.addClass('crossOutButton');
+        li.append(crossOutButton);
 
-        crossOutButton.on("click", deleteListItem);
+        crossOutButton.on("click", function() {
+            li.addClass("delete");
+        });
 
 //3(ii). Adding CLASS DELETE (DISPLAY: NONE) from the css:
 
