@@ -39,30 +39,29 @@ function newItem(){
         $('#list').sortable();
             //to select a list item on an ordered list with 
 //HTML ID of <ol id="list></ol>  use:
-$('#list');
+//$('#list');
 //If it's a class (<ol class="list"></ol>) use:
 //$('.list');
 
 //to select and item in a class use:
-$('.container')
+//$('.container')
 //to append something to the list use:
-$('#list').append("<li>Strawberries</li>");
+//$('#list').append("<li>Strawberries</li>");
 //to use the variable "list" created earier write:
-list.append("<li>Dog food</li>");
+//list.append("<li>Dog food</li>");
 
 //to append the li vairiable to the list variable using:
-list.append(li);
+//list.append(li);
 //To create a new DOM element:
-let newElement = $('<div class="new-class">Do not forget milk!</div>');
-$('body').append(newElement);
+//let newElement = $('<div class="new-class">Do not forget milk!</div>');
+//$('body').append(newElement);
 
 //to get input values from the index page: 
-$('#input').val("Dog food");
+//$('#input').val("Dog food");
 //To append the value to another element: 
-li.append(inputValue);
+//li.append(inputValue);
 //to hide an element:
-li.addClass('delete');
-
+//li.addClass('delete');
 
 // to use Ajax to fetch with jQuery asynchronous requests:
 //$.ajax('https://yesno.wtf/api', { dtataType: 'json'}).then(function (responseJSON) {
@@ -124,5 +123,3 @@ li.addClass('delete');
 //input.remove(); //delete the element
 //$('body').append(input); //similar to appendChild
 //$('body').empty(); // removes element children
-
-
