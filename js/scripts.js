@@ -1,9 +1,9 @@
 function newItem(){
 //1. Adding a new item to the list of items:
-//to store an <li> element as well as using:
-    let li = $('<li></li>');
+//to store an <li> element as well as using
+    let li = $("<li></li>");
     //To store the value into a variable use:
-    let inputValue = $('#input').val(); 
+    let inputValue = $("#input").val(); 
     let text = inputValue;
     //To append the value to another element: 
     li.append(text);   
@@ -13,6 +13,7 @@ function newItem(){
     }   else {
     //To assign the selected list to a variable use:
         let list = $('#list');
+        list.append(li);
     }
 
 //2. Crossing out an item from the list of items:
@@ -37,6 +38,7 @@ function newItem(){
 
  // 4. Reordering the items: 
         $('#list').sortable();
+    }
             //to select a list item on an ordered list with 
 //HTML ID of <ol id="list></ol>  use:
 //$('#list');
@@ -120,6 +122,4 @@ function newItem(){
 //inputs.slideToggle(); //slide elements in and out
 
 //to create, remove and append empty elements:
-//input.remove(); //delete the element
-//$('body').append(input); //similar to appendChild
-//$('body').empty(); // removes element children
+//input.remove(); //delete the elem//$('body').append(input); //similar to appendChild
