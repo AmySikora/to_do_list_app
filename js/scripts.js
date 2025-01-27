@@ -37,7 +37,7 @@ function newItem(){
  // 4. Reordering the items: 
         $('#list').sortable();
     }
-            //to select a list item on an ordered list with 
+//to select a list item on an ordered list with 
 //HTML ID of <ol id="list></ol>  use:
 //$('#list');
 //If it's a class (<ol class="list"></ol>) use:
